@@ -16,8 +16,10 @@
 
 
 (global-set-key (kbd "C-z") 'undo)
-(global-set-key (kbd "C-<tab>") 'centaur-tabs-forward)
-(global-set-key (kbd "C-S-<tab>") 'centaur-tabs-backward)
+(global-set-key (kbd "C-M-<right>") 'centaur-tabs-forward)
+(global-set-key (kbd "C-M-<left>") 'centaur-tabs-backward)
+(global-set-key (kbd "C-M-<up>")   'centaur-tabs-forward-group)
+(global-set-key (kbd "C-M-<down>")   'centaur-tabs-backward-group)
 
 (global-set-key (kbd "C-S-<return>") 'insert-semicolon-at-the-end )
 (defun insert-semicolon-at-the-end ()
@@ -26,6 +28,6 @@
         (move-end-of-line nil)
         (insert-char #b111011) ;; insert semicolone
         (newline)
-       )
+        )
 
-(windmove-default-keybindings 'meta) ;; alt+arrows moves coursor
+(windmove-default-keybindings 'meta) ;; alt+ arrows moves coursor
