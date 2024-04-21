@@ -27,3 +27,5 @@
         (insert-char #b111011) ;; insert semicolone
         (newline)
        )
+
+(windmove-default-keybindings 'meta) ;; alt+arrows moves coursor
