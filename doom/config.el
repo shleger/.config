@@ -74,3 +74,12 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+
+(after! dap-mode
+
+;; https://discourse.doomemacs.org/t/how-to-debug-rust-in-dap-mode/4060/6
+  (require 'dap-lldb)
+  (require 'dap-cpptools)
+
+)
