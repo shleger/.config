@@ -14,12 +14,11 @@
  )
 
 
-
-(global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-M-<right>") 'centaur-tabs-forward)
-(global-set-key (kbd "C-M-<left>") 'centaur-tabs-backward)
-(global-set-key (kbd "C-M-<up>")   'centaur-tabs-forward-group)
-(global-set-key (kbd "C-M-<down>")   'centaur-tabs-backward-group)
+(global-set-key (kbd "C-M-<left>")  'centaur-tabs-backward)
+(global-set-key (kbd "C-M-<up>")    'centaur-tabs-forward-group)
+(global-set-key (kbd "C-M-<down>")  'centaur-tabs-backward-group)
+(global-set-key (kbd "C-w")         'kill-this-buffer)
 
 (global-set-key (kbd "C-S-<return>") 'insert-semicolon-at-the-end )
 (defun insert-semicolon-at-the-end ()
