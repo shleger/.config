@@ -1,7 +1,7 @@
 {
   "group/systray": {
     "orientation": "horizontal",
-    "modules": ["tray", "power-profiles-daemon"],
+    "modules": ["tray", "power-profiles-daemon", "hyprland/language"],
   },
   "group/end-left-module": {
     "orientation": "horizontal",

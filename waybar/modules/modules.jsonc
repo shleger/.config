@@ -120,6 +120,12 @@
     }
  },
 
+ "hyprland/language": {
+        "format": "{}",
+        "format-en": "🇺🇸",
+        "format-ru": "🇷🇺",
+    },
+
  "temperature": {
     "format": "{temperatureC}°C",
     "format-critical": " {temperatureC}°C",
