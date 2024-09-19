@@ -85,3 +85,17 @@
   )
 
 (cua-mode 1)
+
+(setq user_home  (getenv "USER"))
+(setq lsp_home  (concat "/home/" user_home "/.ghcup/hls/2.9.0.1/bin")) ;; after installing hls server from ghcup
+(setq local_bin (concat "/home/" user_home "/.local/bin"))
+
+
+(setenv "PATH"  (concat (getenv "PATH") ":" lsp_home ":" local_bin))
+(push (eval lsp_home)  exec-path)
+(push (eval local_bin) exec-path)
+
+
+;; https://github.com/mihaimaruseac/hindent/tree/master
+(require 'hindent) ;; ;; install first: stack install hindent
+(add-hook 'haskell-mode-hook #'hindent-mode)
