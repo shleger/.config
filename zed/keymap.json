@@ -1,0 +1,34 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+// emacs example keybaindings - https://gist.github.com/Yevgnen/9ac6784bbbbfdc604b16b87405b42bbe
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-j": "terminal_panel::ToggleFocus",
+      "ctrl-shift-q": "editor::CopyRelativePath",
+      "ctrl-n": ["workspace::SendKeystrokes", "ctrl-shift-j cabal build enter"]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "alt-.": "editor::GoToDefinition",
+      "ctrl-e": "editor::MoveToEndOfLine",
+      "ctrl-a": "editor::MoveToBeginningOfLine",
+      "alt-shift-f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-,": "pane::GoBack"
+    }
+  }
+]
