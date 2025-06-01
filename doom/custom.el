@@ -22,6 +22,10 @@
 (global-set-key (kbd "C-M-<down>")  'centaur-tabs-backward-group)
 (global-set-key (kbd "C-w")         'kill-this-buffer)
 
+(global-set-key (kbd "C-z")         'undo-only)
+(global-set-key (kbd "C-S-z")       'undo-redo)
+
+
 (global-set-key (kbd "C-S-<return>") 'insert-semicolon-at-the-end )
 (defun insert-semicolon-at-the-end ()
         "Insert semicolon after the end of the line."
